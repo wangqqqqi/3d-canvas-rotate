@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- <script src="pack/js/flexible.js" charset="utf-8"></script> -->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="initial-scale=1, maximum=1, minimum=1, user-scalable=no" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <title>720全景 重力+手势360度</title>
+  <link rel="stylesheet" href="pack/css/style.css">
+  <script src="pack/js/three.min.js"></script>
+  <script src="pack/js/Hilbert3d.js"></script>
+  <script src="pack/js/DeviceOrientationControls.js"></script>
+  <script src="pack/js/OrbitControls.js"></script>
+  <script src="pack/js/TrackballControls.js"></script>
+  <script src="http://tools.people.com.cn/libs/zepto/1.1.6/zepto.min.js"></script>
+  <script src="http://leaders.people.com.cn/img/MAIN/2018/01/118027/js/preloadjs.min.js"></script>
+</head>
+<script>
+  document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+</script>
+
+<body>
+  <div class="load-wrap ">
+    <div class="load">
+      <div class="circle"></div>
+      <div class="num">0%</div>
+    </div>
+  </div>
+  <script type="text/javascript">
+    $(".load-wrap").on("touchmove", function (e) {
+      e.preventDefault();
+    }, false);
+  </script>
+  <div id="stage"></div>
+  <script charset="utf-8" src="pack/js/index.js"></script>
+</body>
+
+</html>
